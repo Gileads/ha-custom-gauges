@@ -2,9 +2,20 @@
 
 Un pack complet de **4 cartes Lovelace personnalisées** pour Home Assistant, offrant des visualisations esthétiques et fonctionnelles pour afficher vos données de capteurs.
 
+<table align="center"><tr>
+<td align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/half-arc-gauge.png" width="200" alt="Jauge demi-arc"><br><sub>Demi-arc</sub></td>
+<td align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/battery-ring.png" width="130" alt="Jauge ronde batterie"><br><sub>Batterie</sub></td>
+<td align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/aiguille-puissance.png" width="200" alt="Jauge aiguille puissance"><br><sub>Aiguille puissance</sub></td>
+<td align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/thermo-hygro.png" width="200" alt="Jauge thermo-hygro"><br><sub>Thermo-hygro</sub></td>
+</tr></table>
+
+
 ## 📋 Contenu du Pack
 
 ### 1. **Half Arc Gauge** (`custom:half-arc-gauge`)
+
+<p align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/half-arc-gauge.png" width="260" alt="Jauge demi-arc : style Classique (haut) et style Blocs (bas)"></p>
+
 Jauge en demi-arc avec styles modernes et responsifs.
 
 **Caractéristiques :**
@@ -30,6 +41,9 @@ unit: "°C"
 ---
 
 ### 2. **Battery Ring Gauge** (`custom:battery-ring-gauge`)
+
+<p align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/battery-ring.png" width="200" alt="Jauges rondes batterie"></p>
+
 Jauge circulaire style montre Garmin, idéale pour afficher l'état de batterie ou tout pourcentage.
 
 **Caractéristiques :**
@@ -50,6 +64,9 @@ style: classic
 ---
 
 ### 3. **Jauge Aiguille Puissance** (`custom:jauge-aiguille-puissance`)
+
+<p align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/aiguille-puissance.png" width="260" alt="Jauge à aiguille rétro"></p>
+
 Jauge rétro avec aiguille analogique pour afficher la consommation en watts.
 
 **Caractéristiques :**
@@ -71,6 +88,9 @@ max: 5000
 ---
 
 ### 4. **Jauge Thermo Hygro** (`custom:jauge-thermo-hygro`)
+
+<p align="center"><img src="https://raw.githubusercontent.com/Gileads/ha-custom-gauges/main/images/thermo-hygro.png" width="260" alt="Jauge thermo-hygro"></p>
+
 Double aiguille pour température et humidité, style instrument météo ancien.
 
 **Caractéristiques :**
