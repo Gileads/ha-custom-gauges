@@ -1,7 +1,18 @@
-/* Custom Gauges Pack - bundle HACS (4 jauges + option card_transparent) */
+/* Custom Gauges Pack - bundle HACS (4 jauges + option card_transparent) - tolere le double chargement */
 
 /* ===== half-arc-gauge ===== */
 (function(){
+  // Garde anti-doublon : si une carte est deja declaree (anciennes ressources
+  // encore actives), on ignore la 2e declaration au lieu de planter.
+  const __ce = window.customElements;
+  const customElements = {
+    define: (n, c, o) => { if (!__ce.get(n)) __ce.define(n, c, o); },
+    get: (n) => __ce.get(n),
+    whenDefined: (n) => __ce.whenDefined(n)
+  };
+  const __cc = window.customCards = window.customCards || [];
+  const __push = __cc.push.bind(__cc);
+
 class TopArcGauge extends HTMLElement {
   setConfig(config) {
     if (!config.entity) throw new Error("Merci de définir une entité (entity)");
@@ -2035,6 +2046,17 @@ customElements.define('battery-ring-gauge-editor', BatteryRingGaugeEditor);
 
 /* ===== battery-ring-gauge-responsive ===== */
 (function(){
+  // Garde anti-doublon : si une carte est deja declaree (anciennes ressources
+  // encore actives), on ignore la 2e declaration au lieu de planter.
+  const __ce = window.customElements;
+  const customElements = {
+    define: (n, c, o) => { if (!__ce.get(n)) __ce.define(n, c, o); },
+    get: (n) => __ce.get(n),
+    whenDefined: (n) => __ce.whenDefined(n)
+  };
+  const __cc = window.customCards = window.customCards || [];
+  const __push = __cc.push.bind(__cc);
+
 // ============================================================
 // Jauge ronde batterie — mise en page adaptative + réglages
 //
@@ -2183,6 +2205,17 @@ customElements.whenDefined('battery-ring-gauge-editor').then(() => {
 
 /* ===== jauge-aiguille-puissance ===== */
 (function(){
+  // Garde anti-doublon : si une carte est deja declaree (anciennes ressources
+  // encore actives), on ignore la 2e declaration au lieu de planter.
+  const __ce = window.customElements;
+  const customElements = {
+    define: (n, c, o) => { if (!__ce.get(n)) __ce.define(n, c, o); },
+    get: (n) => __ce.get(n),
+    whenDefined: (n) => __ce.whenDefined(n)
+  };
+  const __cc = window.customCards = window.customCards || [];
+  const __push = __cc.push.bind(__cc);
+
 // ============================================================
 // Carte Lovelace personnalisée : jauge-aiguille-puissance
 // Jauge à aiguille rétro (façon vieux compteur), cadran uni,
@@ -2951,6 +2984,17 @@ window.customCards.push({
 
 /* ===== jauge-thermo-hygro ===== */
 (function(){
+  // Garde anti-doublon : si une carte est deja declaree (anciennes ressources
+  // encore actives), on ignore la 2e declaration au lieu de planter.
+  const __ce = window.customElements;
+  const customElements = {
+    define: (n, c, o) => { if (!__ce.get(n)) __ce.define(n, c, o); },
+    get: (n) => __ce.get(n),
+    whenDefined: (n) => __ce.whenDefined(n)
+  };
+  const __cc = window.customCards = window.customCards || [];
+  const __push = __cc.push.bind(__cc);
+
 const FONTS = ["Jost","Barlow Condensed","Cormorant Garamond","Oswald","Rajdhani","Aldrich","Josefin Sans"];
 let _fontsLoaded = false;
 function loadFonts(){
@@ -3590,6 +3634,17 @@ window.customCards.push({
 
 /* ===== card-transparent ===== */
 (function(){
+  // Garde anti-doublon : si une carte est deja declaree (anciennes ressources
+  // encore actives), on ignore la 2e declaration au lieu de planter.
+  const __ce = window.customElements;
+  const customElements = {
+    define: (n, c, o) => { if (!__ce.get(n)) __ce.define(n, c, o); },
+    get: (n) => __ce.get(n),
+    whenDefined: (n) => __ce.whenDefined(n)
+  };
+  const __cc = window.customCards = window.customCards || [];
+  const __push = __cc.push.bind(__cc);
+
 // ============================================================
 // Fond de carte transparent — option additive
 //
